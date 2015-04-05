@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E8F8C6914FA639E4951DE3C /* libPods-ParseSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3C2BDF5DDD5722F61AE927 /* libPods-ParseSample.a */; };
 		A5CBB0071AD1BD7E005FFFAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CBB0061AD1BD7E005FFFAB /* AppDelegate.swift */; };
 		A5CBB0091AD1BD7E005FFFAB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CBB0081AD1BD7E005FFFAB /* FirstViewController.swift */; };
 		A5CBB00B1AD1BD7E005FFFAB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CBB00A1AD1BD7E005FFFAB /* SecondViewController.swift */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D04E876D67A81FE19A4601A /* Pods-ParseSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParseSample/Pods-ParseSample.release.xcconfig"; sourceTree = "<group>"; };
+		4F3C2BDF5DDD5722F61AE927 /* libPods-ParseSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ParseSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5CBB0011AD1BD7E005FFFAB /* ParseSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5CBB0051AD1BD7E005FFFAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5CBB0061AD1BD7E005FFFAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +41,7 @@
 		A5CBB0181AD1BD7F005FFFAB /* ParseSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParseSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5CBB01D1AD1BD7F005FFFAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5CBB01E1AD1BD7F005FFFAB /* ParseSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseSampleTests.swift; sourceTree = "<group>"; };
+		F285585E0DAA4031D7847275 /* Pods-ParseSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParseSample/Pods-ParseSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E8F8C6914FA639E4951DE3C /* libPods-ParseSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +63,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		383D13552B2197B99817081E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F3C2BDF5DDD5722F61AE927 /* libPods-ParseSample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A5CBAFF81AD1BD7E005FFFAB = {
 			isa = PBXGroup;
 			children = (
 				A5CBB0031AD1BD7E005FFFAB /* ParseSample */,
 				A5CBB01B1AD1BD7F005FFFAB /* ParseSampleTests */,
 				A5CBB0021AD1BD7E005FFFAB /* Products */,
+				D33ED6DCBF5A4EC0D51522E7 /* Pods */,
+				383D13552B2197B99817081E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +130,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D33ED6DCBF5A4EC0D51522E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F285585E0DAA4031D7847275 /* Pods-ParseSample.debug.xcconfig */,
+				0D04E876D67A81FE19A4601A /* Pods-ParseSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +146,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5CBB0221AD1BD7F005FFFAB /* Build configuration list for PBXNativeTarget "ParseSample" */;
 			buildPhases = (
+				256385AF2EB977F9889B07B3 /* Check Pods Manifest.lock */,
 				A5CBAFFD1AD1BD7E005FFFAB /* Sources */,
 				A5CBAFFE1AD1BD7E005FFFAB /* Frameworks */,
 				A5CBAFFF1AD1BD7E005FFFAB /* Resources */,
+				1F66C36D009A4AC6B2533874 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,6 +235,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F66C36D009A4AC6B2533874 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseSample/Pods-ParseSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		256385AF2EB977F9889B07B3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A5CBAFFD1AD1BD7E005FFFAB /* Sources */ = {
@@ -338,6 +397,7 @@
 		};
 		A5CBB0231AD1BD7F005FFFAB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F285585E0DAA4031D7847275 /* Pods-ParseSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ParseSample/Info.plist;
@@ -348,6 +408,7 @@
 		};
 		A5CBB0241AD1BD7F005FFFAB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D04E876D67A81FE19A4601A /* Pods-ParseSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ParseSample/Info.plist;
@@ -409,6 +470,7 @@
 				A5CBB0241AD1BD7F005FFFAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5CBB0251AD1BD7F005FFFAB /* Build configuration list for PBXNativeTarget "ParseSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +479,7 @@
 				A5CBB0271AD1BD7F005FFFAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
