@@ -30,6 +30,7 @@
 /* Begin PBXFileReference section */
 		0D04E876D67A81FE19A4601A /* Pods-ParseSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParseSample/Pods-ParseSample.release.xcconfig"; sourceTree = "<group>"; };
 		4F3C2BDF5DDD5722F61AE927 /* libPods-ParseSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ParseSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A593514C1AD2CD1D00D45456 /* ParseSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ParseSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		A5CBB0011AD1BD7E005FFFAB /* ParseSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5CBB0051AD1BD7E005FFFAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5CBB0061AD1BD7E005FFFAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +102,7 @@
 				A5CBB00F1AD1BD7F005FFFAB /* Images.xcassets */,
 				A5CBB0111AD1BD7F005FFFAB /* LaunchScreen.xib */,
 				A5CBB0041AD1BD7E005FFFAB /* Supporting Files */,
+				A593514C1AD2CD1D00D45456 /* ParseSample-Bridging-Header.h */,
 			);
 			path = ParseSample;
 			sourceTree = "<group>";
@@ -400,9 +402,12 @@
 			baseConfigurationReference = F285585E0DAA4031D7847275 /* Pods-ParseSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ParseSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ParseSample/ParseSample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -411,9 +416,11 @@
 			baseConfigurationReference = 0D04E876D67A81FE19A4601A /* Pods-ParseSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ParseSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ParseSample/ParseSample-Bridging-Header.h";
 			};
 			name = Release;
 		};
